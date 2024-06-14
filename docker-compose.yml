@@ -1,0 +1,7 @@
+services:
+  node:
+    build:
+      context: .
+    command: /sbin/tini -- node ./bin/www
+    ports:
+      - 80:3000
